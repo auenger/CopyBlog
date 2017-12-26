@@ -1,4 +1,4 @@
-/* =============================================================================
+	/* =============================================================================
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 
@@ -124,7 +124,7 @@ a {
 }
 
 mark {
-	background-color: #ff9;
+	background-color: #F9F9F9;
 	color: #000;
 	font-style: italic;
 	font-weight: bold
@@ -175,7 +175,6 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	background-color: #060606;
 }
 
 html {
@@ -184,6 +183,7 @@ html {
 
 body {
 	font: normal 75% Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
 }
 
 canvas {
@@ -236,9 +236,92 @@ canvas {
 #particles-js {
 	width: 100%;
 	height: 100%;
-	/*background-color: #002B5A;*/
 	background-image: url('../img/background.png');
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	position: fixed;
+	z-index: -1;
+}
+
+
+/* Navigation */
+
+#tf-menu {
+	padding: 20px;
+	padding-bottom: 10px;
+	transition: all 0.8s;
+}
+
+#tf-menu.navbar-default {
+	background-color: hsla(0,0%,100%,.6);
+	border-color: rgba(231, 231, 231, 0);
+}
+
+#tf-menu a.navbar-brand {
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #1296db;
+	font-weight: 900;
+}
+#tf-menu a.navbar-brand img{
+	float: left;
+	width: 50px;
+	margin-top: -12px;
+	padding-right: 5px;
+}
+#tf-menu a.navbar-brand span{
+	padding-left: 50px;
+	font-size: 14px;
+	color: #1296db;
+	font-weight: 300;
+}
+
+#tf-menu a.is img{
+	float: left;
+	width: 30px;
+	margin-top: -2px;
+	padding-right: 3px;
+}
+
+#tf-menu a.is span{
+	padding-left: 50px;
+	font-size: 8px;
+	color: #1296db;
+	font-weight: 100;
+}
+
+#tf-menu.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.on {
+	background-color: rgba(231, 231, 231, 0.8); !important;
+	padding: 5px 0 !important;
+
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #FCAC45 !important;
+	background-color: transparent;
+	font-weight: 700;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #FCAC45;
+	border-color: #FCAC45;
+}
+
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
 }
