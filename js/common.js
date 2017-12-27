@@ -3,7 +3,7 @@ document.addEventListener("visibilitychange", function() {
 	document.title = document.hidden ? "你妹的，快回来！" : reallyDocumentTitle;
 });
 window.onscroll=function(){
-	if($(window).scrollTop() > 80) {
+	if($(window).scrollTop() > 50) {
 		$('.navbar-default').addClass('on');
 		$('.navbar-brand').addClass('is');
 		$('.navBar').addClass('up');

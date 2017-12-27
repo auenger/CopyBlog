@@ -4,12 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ImCoders</title>
+		<meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link rel="shortcut icon" href="img/icon/m_black_30.png">
 		<link rel="stylesheet" type="text/css" href="css/particlesStyle.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/CustCs.css" />
-		<link rel="stylesheet" type="text/css" href="css/wiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wiper.css" />
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
 	</head>
@@ -63,9 +64,7 @@
 
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="span1">
-				</div>
-				<div class="span2 container-nav">
+				<div class="span3 container-nav">
 					<div class="navBar">
 						<nav class="bar_list">
 							<a class="item active"><i class="fa fa-home fa-fw"></i><span>Home</span></a>
@@ -103,10 +102,58 @@
 						</ul>
 
 					</div>
+
+					<div id="articles" class="articles">
+						<div class="article-list">
+							<div class="article-list-item">
+								<div class="item-content">
+									<div class="item-thumb">
+										<a href="/article/78" class="">
+											<img src="https://static.surmon.me/nodepress/image/timg-traver.jpg?imageView2/1/w/350/h/238/format/webp/interlace/1/q/75|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/460/fill/I0ZGRkZGRg==/dissolve/23/gravity/SouthWest/dx/15/dy/7|imageslim" alt="欢喜勇猛，向死而生" title="欢喜勇猛，向死而生" class="item-thumb-img">
+										</a>
+									</div>
+									<div class="item-body">
+										<h4 class="item-title"><a href="/article/78" title="欢喜勇猛，向死而生" class="">欢喜勇猛，向死而生</a></h4>
+										<p class="item-description" style="-webkit-box-orient: vertical;">天空在心，路在脚底，你，梦想去向哪里？去那座写了你名字的山，去那片等了你很久的海，还是去你向往的无边无际，海阔天空？</p>
+										<div class="item-meta">
+											<span class="date"><i class="fa fa-clock-o"></i><span>2017/11/17 下午</span></span>
+											<span class="views"><i class="fa fa-eye"></i><span>896</span></span>
+											<span class="comments"><i class="fa fa-comment"></i><span>10</span></span>
+											<span class="likes"><i class="fa fa-heart"></i><span>16</span></span>
+											<span class="categories"><i class="fa fa-list"></i><!----><a href="/category/think" class="">Think</a></span>
+											<span class="tags"><i class="fa fa-tag"></i><!----><a href="/tag/soul" class="">灵魂</a><a href="/tag/world" class="">世界</a></span></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="article-list-item">
+								<div class="item-content">
+									<div class="item-thumb">
+										<a href="/article/78" class="">
+											<img src="https://static.surmon.me/nodepress/image/timg-traver.jpg?imageView2/1/w/350/h/238/format/webp/interlace/1/q/75|watermark/2/text/U3VybW9uLm1l/font/Y2FuZGFyYQ==/fontsize/460/fill/I0ZGRkZGRg==/dissolve/23/gravity/SouthWest/dx/15/dy/7|imageslim" alt="欢喜勇猛，向死而生" title="欢喜勇猛，向死而生" class="item-thumb-img">
+										</a>
+									</div>
+									<div class="item-body">
+										<h4 class="item-title"><a href="/article/78" title="欢喜勇猛，向死而生" class="">欢喜勇猛，向死而生</a></h4>
+										<p class="item-description" style="-webkit-box-orient: vertical;">天空在心，路在脚底，你，梦想去向哪里？去那座写了你名字的山，去那片等了你很久的海，还是去你向往的无边无际，海阔天空？</p>
+										<div class="item-meta">
+											<span class="date"><i class="fa fa-clock-o"></i><span>2017/11/17 下午</span></span>
+											<span class="views"><i class="fa fa-eye"></i><span>896</span></span>
+											<span class="comments"><i class="fa fa-comment"></i><span>10</span></span>
+											<span class="likes"><i class="fa fa-heart"></i><span>16</span></span>
+											<span class="categories"><i class="fa fa-list"></i><!----><a href="/category/think" class="">Think</a></span>
+											<span class="tags" style="display:none;"><i class="iconfont icon-tag"></i><!----><a href="/tag/soul" class="">灵魂</a><a href="/tag/world" class="">世界</a></span></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
 				</div>
 				<div class="span3">
 					<div class="search-bar span3-con">
-						<input type="text" name="search" id="search" value="" placeholder="Search......"/>
+						<input type="text" name="search" id="search" value="" placeholder="Search......" />
 						<button><i class="fa fa-search"></i></button>
 					</div>
 					<div class="hot-list span3-con">
@@ -122,7 +169,27 @@
 					<div class="schedule-bar span3-con">
 						<div id="schedule-box" class=""></div>
 					</div>
-					
+
+					<div class="span3-con tags-bar">
+						<div class="aside-tag">
+							<ul class="aside-tag-list">
+								<li class="item">
+									<a title="计算机的世界" href="/tag/computer" class="title">
+										<i class="fa fa-television"></i>
+										<span>&nbsp;</span><span>计算机</span>
+										<span>(2)</span>
+									</a>
+								</li>
+								<li class="item">
+									<a title="无处安放" href="/tag/soul" class="title"><i class="fa fa-coffee"></i><span>&nbsp;</span><span>灵魂</span><span>(6)</span></a>
+								</li>
+								<li class="item">
+									<a title="TCP/IP、HTTP、HTTPS、HTTP2" href="/tag/network" class="title"><i class="fa fa-sitemap"></i><span>&nbsp;</span><span>网络</span><span>(3)</span></a>
+								</li>
+							</ul>
+							</div>
+					</div>
+
 				</div>
 			</div>
 		</div>

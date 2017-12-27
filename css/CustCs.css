@@ -3,11 +3,13 @@ a:hover {
 }
 
 .container-fluid {
+	min-width: 1300px;
 	position: absolute;
 	width: 100%;
 	height: 600px;
 	margin-top: 90px;
 	background: transparent;
+	margin-left: -3%;
 }
 
 .row-fluid {
@@ -19,16 +21,17 @@ a:hover {
 	padding-left: 50px;
 }
 
+.span6,
 .span5,
 .span3 {
 	background: transparent;
-	height: 1000px;
 }
 
 .navBar {
 	width: 10%;
 	float: right;
 	position: fixed;
+	margin-left: 9%;
 }
 
 .up {
@@ -134,7 +137,8 @@ a:hover {
 
 
 /* 日期选择框 */
-.schedule-bar{
+
+.schedule-bar {
 	padding: 0 !important;
 }
 
@@ -216,4 +220,151 @@ ul {
 .selected-style {
 	background: #00BDFF;
 	color: #ffffff;
+}
+
+
+/* 文章列表 */
+
+.articles {
+	margin-top: .5em;
+}
+
+.articles>.article-list {
+	margin-bottom: 1em;
+	min-height: 1em;
+	overflow: hidden;
+}
+
+.article-list-item {
+	min-width: 600px !important;
+	margin-bottom: 1em;
+	background-color: hsla(0, 0%, 100%, .6);
+}
+
+.article-list-item a {
+	color: #555555;
+}
+
+.article-list-item>.item-content {
+	display: block;
+	overflow: hidden;
+	height: 8.5em;
+	padding: .5em;
+}
+
+.article-list-item>.item-content>.item-thumb {
+	float: left;
+	width: 12em;
+	height: 8.5em;
+	overflow: hidden;
+}
+
+.article-list-item>.item-content>.item-thumb .item-thumb-img {
+	min-width: 100%;
+	width: calc(100% + .5em);
+	max-width: calc(100% + .5em);
+	height: auto;
+	min-height: 8.5em;
+	border-color: transparent;
+	background-color: silver;
+	-webkit-opacity: 1;
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+	-ms-opacity: 1;
+	-o-opacity: 1;
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	-khtml-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.article-list-item>.item-content>.item-body {
+	max-width: 390px !important;;
+	float: left;
+	padding-left: .8em;
+	width: 28.5em;
+	height: 8.5em;
+}
+
+.article-list-item>.item-content>.item-body>.item-title {
+	font-size: 1em;
+	font-weight: 700;
+	color: #333;
+	margin-top: .2em;
+	margin-bottom: .5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.article-list-item>.item-content>.item-body>.item-description {
+	-webkit-box-orient: vertical;
+	font-size: .9em;
+	margin: 0;
+	margin-bottom: .3em;
+	height: 5em;
+	line-height: 1.8em;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.article-list-item>.item-content>.item-body>.item-meta {
+	font-size: .9em;
+	height: 2em;
+	line-height: 2em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+}
+
+.article-list-item>.item-content>.item-body>.item-meta i {
+	margin-right: .3em;
+	cursor: pointer;
+}
+
+.article-list-item>.item-content>.item-body>.item-meta span,
+a {
+	margin-right: .5em;
+}
+
+/* 标签列表 */
+.tags-bar>.aside-tag{
+    width: 19em;
+    border-bottom: 1rem solid transparent;
+    font-size: 14px;
+}
+.tags-bar>.aside-tag .aside-tag-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.tags-bar>.aside-tag .aside-tag-list .item{
+    display: inline-block;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    height: 2em;
+    line-height: 2em;
+    text-transform: capitalize;
+    background-color: hsla(0,0%,77%,.4);
+}
+.tags-bar>.aside-tag .aside-tag-list .item .title{
+    color: #555555;
+    display: block;
+    padding: 0 .5em;
+    font-family: DINRegular,-apple-system,BlinkMacSystemFont,PingFang SC,Helvetica Neue,Hiragino Sans GB,Segoe UI,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,sans-serif;
 }
